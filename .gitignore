@@ -1,0 +1,66 @@
+# =========================
+# Zephyr / West Build Files
+# =========================
+
+# Build output
+build/
+build*/
+
+# West generated files
+.west/
+west.yml.lock
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Kconfig
+.config
+.config.old
+
+# Generated Zephyr files
+zephyr/.config
+zephyr/include/generated/
+zephyr/zephyr.dts
+zephyr/zephyr.dts.pre
+zephyr/zephyr.elf
+zephyr/zephyr.hex
+zephyr/zephyr.bin
+zephyr/zephyr.map
+
+# Binary / firmware
+*.bin
+*.hex
+*.elf
+*.map
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# CLion
+.idea/
+
+# Visual Studio
+.vs/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
