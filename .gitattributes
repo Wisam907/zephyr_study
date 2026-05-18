@@ -1,0 +1,21 @@
+# Auto detect text files
+* text=auto
+
+# Force LF for source code
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+
+# Build files
+*.conf text eol=lf
+*.overlay text eol=lf
+CMakeLists.txt text eol=lf
+*.cmake text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.py text eol=lf
+
+# Windows batch
+*.bat text eol=crlf

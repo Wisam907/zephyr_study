@@ -1,0 +1,18 @@
+#include <dt-bindings/gpio/gpio.h>
+
+/ {
+    // 自定义一个节点
+    my_led_node {
+        compatible = "gpio-leds";
+        external_led: led_external {
+            gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;   // P0.13引脚，对应LED1
+
+            label = "External LED";
+        };
+    };
+
+    // 给这个节点起个别名，方便代码调用
+    aliases {
+        led-ext = &external_led;
+    };
+};
