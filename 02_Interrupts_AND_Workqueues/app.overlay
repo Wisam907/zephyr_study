@@ -1,0 +1,9 @@
+/ {
+    aliases {
+        sw0 = &button0; // Button 1 在nRF52840 DK上通常是button0
+        led0 = &led0;
+
+        sw1 = &button1;
+        led1 = &led1;
+    };
+};
