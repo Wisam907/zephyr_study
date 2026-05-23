@@ -1,0 +1,12 @@
+# 自动生成 .clangd 配置
+file(WRITE ${CMAKE_SOURCE_DIR}/.clangd
+"CompileFlags:
+  CompilationDatabase: ${CMAKE_BINARY_DIR}/
+")
+
+cmake_minimum_required(VERSION 3.20.0)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+
+project(03_Semaphore_AND_Mutex)
+
+target_sources(app PRIVATE src/main.c)
